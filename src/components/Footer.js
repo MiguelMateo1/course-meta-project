@@ -4,8 +4,8 @@ import Logo from "../components/assets/logo.jpg"
 function Footer() {
     return (
       <footer>  
-            <img src={Logo} alt="little lemon"/>
-        <div className="footer-content">
+        <img src={Logo} alt="little lemon"/>
+           <div className="footer-content">
             <div className="footer-nav">
                 <p className="footer-head">Navigtion</p>
                 <Link to="/" className="footer-item">Home</Link>
