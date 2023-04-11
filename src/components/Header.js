@@ -1,11 +1,12 @@
 import Logo from "../components/assets/logo.jpg"
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
       <header>
         <NavLink to = "/">
-            {<img className="logo-img" src = {Logo} />}
+          <Link to="/"><img src={Logo} alt="little lemon"/></Link>
+          <Nav/>
         </NavLink>
       </header>
     );
