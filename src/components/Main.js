@@ -1,7 +1,8 @@
-import Hero from "./components/Hero"
-import Menu from "./components/Menu"
-import Testimonials from "./components/Testimonials"
-import Description from "./components/Description"
+import Hero from "./Hero"
+import Menu from "./Menu"
+import Testimonials from "./Testimonials"
+import Description from "./Description"
+
 
 function Main() {
     return (

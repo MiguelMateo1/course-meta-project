@@ -14,13 +14,13 @@ function Nav() {
           <div className="mobile-nav" onClick={navToggle}>
             {isOpen ? <FaRegTimesCircle /> : <FaGripLines />}
           </div>
-        <nav className={`nav ${isOpen ? 'active' : ''}`} onClick={toggleNav}>
+        <nav className={`nav ${isOpen ? 'active' : ''}`} onClick={navToggle}>
           <Link to="/" className="nav-item">HOME</Link>
-          <a href="#" className="nav-item">ABOUT</a>
-          <a href="#" className="nav-item">MENU</a>
+          <a href="/" className="nav-item">ABOUT</a>
+          <a href="/" className="nav-item">MENU</a>
           <Link to="/booking" className="nav-item">RESERVATIONS</Link>
-          <a href="#" className="nav-item">ORDER ONLINE</a>
-          <a href="#" className="nav-item">LOGIN</a>
+          <a href="/" className="nav-item">ORDER ONLINE</a>
+          <a href="/" className="nav-item">LOGIN</a>
         </nav>
       </>
     );

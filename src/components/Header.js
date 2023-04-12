@@ -1,13 +1,12 @@
-import Logo from "../components/assets/logo.jpg"
+import Logo from "../assets/Logo.svg"
+import Nav from "./Nav";
 import { Link } from 'react-router-dom';
 
 function Header() {
     return (
       <header>
-        <NavLink to = "/">
           <Link to="/"><img src={Logo} alt="little lemon"/></Link>
           <Nav/>
-        </NavLink>
       </header>
     );
   }
