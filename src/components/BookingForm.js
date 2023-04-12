@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function BookingForm({availableTimes, submitForm}) {
+function BookingForm({availableTimes,dispatch, submitForm}) {
 
     const [formData, setFormData] = useState({
         firstName: "",
@@ -19,14 +19,15 @@ function BookingForm({availableTimes, submitForm}) {
       }))
     }
 
-    const handleDateChange = (event) => {
-      const { name, value } = event.target
-      
-      setFormData((prevFormData) => ({
-        ...prevFormData,
-        [name]: value
-      }))
-    }
+    const handleDateChange = async (event) => {
+        const { name, value } = event.target
+        
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          [name]: value
+        }))
+       dispatch({ type: 'UPDATE_TIMES', payload: value })
+      }
 
     const handleSubmit = (event) => {
       event.preventDefault()
